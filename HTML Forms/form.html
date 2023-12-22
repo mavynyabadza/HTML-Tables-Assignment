@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <style>
+        fieldset {
+          margin-bottom: 20px;  
+        }
+        label,
+        textarea,
+        select,
+        input[type="text"],
+        input[type="file"], {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+<fieldset>
+    <legend>Your Adress</legend>
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" required><br />
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required><br />
+
+    <label for="street">Street:</label>
+    <input type="text" id="street" name="street" required><br />
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required><br />
+</fieldset>
+
+<fieldset>
+    <legend>Additional Details</legend>
+    <div>
+        <label for="biograhy">Biography</label>
+        <input type="text" id="biograpgy" name="biograhy" required><br><br>
+    </div>
+    <div>
+        <label for="">Image</label>
+        <input type="file" /><br><br>
+    </div>
+    <div>
+        <label for="Age">Age Group</label>
+        <select name="" id="">
+            <option value="select">Select Age</option>
+            <option value="0 to 9years">0 to 9years</option>
+            <option value="9 to 18years">0 to 9years</option>
+            <option value="18 to 35years">0 to 9years</option>
+            <option value="35 to 50years">0 to 9years</option>
+        </select>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Interests</legend>
+    <div>
+        <label for="hobbies">Hobbies:</label>
+        <textarea id="hobbies" name="hobbies" rows="4" cols="15" required>
+dancing
+watching TV
+playing soccer
+running
+        </textarea><br><br>
+       
+        
+    </div>
+    <div>
+        <label for="Car">Favorite Car</label>
+        <select name="" id="" color>
+            <option value="select">Favorite Car</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Hyundai">Hyudai</option>
+            <option value="Honda">Honda</option>
+        </select>       
+    </div>
+    <div>
+        <label for="Transport">Favourite public Transport:</label>
+        <textarea id="transport" name="transport" rows="5" cols="8" required>
+Ground:
+Train
+Bus
+
+Water:
+ship
+        </textarea><br><br>
+    </div>
+</fieldset>
+    </form>
+</body>
+</html>
