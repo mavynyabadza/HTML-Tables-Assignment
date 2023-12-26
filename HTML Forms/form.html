@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML FORMS</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
     <style>
         fieldset {
           margin-bottom: 20px;  
@@ -15,24 +16,31 @@
         input[type="file"], {
             margin-bottom: 10px;
         }
+        /* Additional CSS for spacing between chekbox and label */
+        input[type="checkbox"] {
+            margin-right: 5px; /* Adjust space */
+        }
     </style>
 </head>
 <body>
-    <form action="" method="post">
-<fieldset>
-    <legend>Your Adress</legend>
-    <label for="firstname">First Name:</label>
-    <input type="text" id="firstname" name="firstname" required><br />
+    <form class="myform">
+        <action="" method="post">
+        <fieldset>
+            <legend>Your Adress</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" class="myform"><br />
+        
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" class="myform" required><br />
+        
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" class="myform" required><br />
+        
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" class="myform" required><br />
+        </fieldset>
+    </form>
 
-    <label for="lastname">Last Name:</label>
-    <input type="text" id="lastname" name="lastname" required><br />
-
-    <label for="street">Street:</label>
-    <input type="text" id="street" name="street" required><br />
-
-    <label for="city">City:</label>
-    <input type="text" id="city" name="city" required><br />
-</fieldset>
 
 <fieldset>
     <legend>Additional Details</legend>
