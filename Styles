@@ -1,0 +1,5 @@
+/* Styling for the form */
+.myform {
+    padding: 20px;
+    
+}
