@@ -18,7 +18,7 @@
         }
         /* Additional CSS for spacing between chekbox and label */
         input[type="checkbox"] {
-            margin-right: 5px; /* Adjust space */
+            margin-right: 5px; 
         }
     </style>
 </head>
@@ -54,12 +54,8 @@
     </div>
     <div>
         <label for="Age">Age Group</label>
-        <select name="" id="">
-            <option value="select">Select Age</option>
-            <option value="0 to 9years">0 to 9years</option>
-            <option value="9 to 18years">0 to 9years</option>
-            <option value="18 to 35years">0 to 9years</option>
-            <option value="35 to 50years">0 to 9years</option>
+            <input type="number" id="age" name="age"  placeholder="0 to 9years">
+            
         </select>
     </div>
 </fieldset>
@@ -89,13 +85,16 @@ running
     </div>
     <div>
         <label for="Transport">Favourite public Transport:</label>
-        <textarea id="transport" name="transport" rows="5" cols="8" required>
-Ground:
-Train
-Bus
+        <select id="favoritetransport" name="favoritetransport" size="5">
+        <optgroup label="Ground">
+        <option value="Train">Train</option>
+        <option value="Bus">Bus</option>
+    </optgroup>
 
-Water:
-ship
+        <optgroup label="Water">
+        <option value="Ship">Ship</option>
+    </optgroup>
+    </select>   
         </textarea><br><br>
     </div>
 </fieldset>
